@@ -1,0 +1,22 @@
+{
+  "name": "quality-lens",
+  "version": "0.1.0",
+  "description": "Actionable analysis for Playwright JSON test reports.",
+  "type": "module",
+  "bin": { "quality-lens": "dist/cli.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "start": "node dist/cli.js"
+  },
+  "engines": { "node": ">=20" },
+  "keywords": ["playwright", "testing", "quality", "flaky-tests", "cli"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

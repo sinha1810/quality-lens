@@ -1,0 +1,14 @@
+{
+  "suites": [{
+    "file": "tests/checkout.spec.ts",
+    "specs": [
+      { "title": "checkout", "tests": [
+        { "title": "completes a purchase", "projectName": "chromium", "results": [{ "status": "passed", "duration": 1200 }] },
+        { "title": "recovers from a payment timeout", "projectName": "chromium", "results": [
+          { "status": "failed", "duration": 14000, "error": { "message": "Expected 200, received 504" } },
+          { "status": "passed", "duration": 3000 }
+        ] }
+      ] }
+    ]
+  }]
+}
